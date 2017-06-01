@@ -1,0 +1,269 @@
+/* -----css pre-set ----------*/
+* {margin:0px 0px 0px 0px;
+   padding: 0px 0px 0px 0px;}
+
+
+/* -----style at 1280 pixels ----------*/
+body {width:100vw;
+	  box-sizing: border-box;}
+
+#mainWrapper {width:100vw;
+			  box-sizing: border-box;
+			   }
+
+#header {	width:100%;
+			box-sizing: border-box;}
+
+#jumbotron {  width:100%;
+			  min-height:670px;
+			  height:50vw;
+			  /*margin:20px 0px 0px 0px;*/
+	  		  box-sizing: border-box;
+			  background-image:url(../images/hrn_desktop_bg.jpg);
+			  background-repeat:no-repeat;
+			  background-position: center top;
+			  background-size: cover;
+			  /*position: relative;*/
+			  }
+
+#jLeft {width:25%;
+		min-height:670px;
+		/*border:1px solid red;*/
+		box-sizing: border-box;
+		float:left;
+		text-align: center}
+
+
+		#jLeft>p {color:white;
+					margin:575px 0px 0px 24px;
+					font-weight: normal;
+					font-size:1.25vw;
+					font-family: 'museo-sans',sans-serif;}
+		#jLeft>h4 {color:white;
+					margin:0px 0px 0px 24px;
+					font-family: 'museo-sans',sans-serif;
+					font-size:1.75vw;
+					font-weight:900;}
+
+#jCent {width:50%;
+		min-height:670px;
+		/*border:1px solid blue;*/
+		box-sizing: border-box;
+		float:left;
+		text-align: center}
+
+
+		#mainTitle {margin:auto;
+				margin-top:180px;
+				text-align: left;
+				width:50%;}
+		#mainTitle>h3 {font-family: "Playfair Display",serif;
+				   color:white;
+				   font-weight: normal;
+				   position:relative;
+				   }
+		#mainTitle>h3>#one{font-size:2.1vw;
+						position:absolute;
+						top:1vw;
+						left:5vw;}
+
+		#mainTitle>h3>#two {font-size:5.9375vw;
+						position:absolute;
+						top:1vw;
+						left:1vw;
+						
+						}
+		#mainTitle>h3>#three {font-size:2.1vw;
+						position:absolute;
+						top:7.5vw;
+						left:5vw;
+						
+						}
+
+		#jMid {margin:auto;
+			   margin-top:460px;
+				}
+
+				#jMid>h3 {font-family: 'proxima-nova', sans-serif;
+						  font-size:2.4vw;
+						  color:white;
+						  margin-bottom:11px;}
+
+
+			   #jMid>a {
+			   	margin:0px 10px 25px 10px;
+				color:white;
+				font-family: 'Roboto', sans-serif;
+				font-size:14px;
+				text-decoration: none;
+							padding:12px 50px 12px 50px;
+							background-color:#99cc00;
+							display:inline-block;}
+
+				#jMid>a:first-of-type {
+			   	padding:12px 35px 12px 35px;}
+
+		#sponsors { display:inline-block;
+					width:100%;
+					box-sizing: border-box;
+					margin:auto;
+					text-align: center; }
+		#sponsors>ul {}
+		#sponsors>ul>li {width:19.5%;
+						 display:inline-block;
+						 box-sizing: border-box;
+						 padding:0px 0px 0px 0px;
+						 /*margin:35px 3px 0px 3px;*/
+						 list-style: none;
+						 
+						 box-sizing: border-box;}
+
+		#sponsors>ul>li>a {}
+
+		#sponsors>ul>li>a>img {width:80%;}
+
+
+
+
+#jRight {width:25%;
+		min-height:670px;
+		/*border:1px solid yellow;*/
+		box-sizing: border-box;
+		float:right;
+		text-align: center}
+
+
+		#jRight>p {color:white;
+					margin:575px 0px 0px 24px;
+					font-weight: normal;
+					font-size:1.25vw;
+					font-family: 'museo-sans',sans-serif;}
+		#jRight>h4 {color:white;
+					margin:0px 0px 0px 24px;
+					font-family: 'museo-sans',sans-serif;
+					font-size:1.75vw;
+					font-weight:900;}
+
+	
+
+/* -----menus ----------*/
+#dtMenu {width:100vw;
+		 min-height:10vh;
+		 background-color:rgba(0,0,0,0.7);
+		 overflow:hidden;
+		 position:fixed;
+		 z-index: 3000;}
+
+#logo {/*width:17.5%;*/
+	   float:left;
+	   }
+#logo>img {margin: 19px 0px 0px 20px;}
+
+#dtNav { width:60%;
+		  float:left;
+		 text-align:center;}
+
+#dtNav>ul {list-style: none;
+		   margin:29px 25px 29px 25px;}
+
+#dtNav>ul>li { display:inline-block;}
+
+#dtNav>ul>li>a {font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color:white;
+				font-size:86%;
+				padding: 0px 8px 0px 8px; }
+
+#getTickets {float:right;
+			 /*width:17.5%;*/
+			}
+
+#getTickets>div {margin: 28px 52px 0px 0px;}
+
+#getTickets>div>a {	text-align:left;
+				color:white;
+				padding:13px 52px 13px 52px;
+				background-color:#99cc00;
+				font-family: 'Roboto', sans-serif;
+				font-size:86%;
+				text-decoration: none;
+			   }
+
+#mbMenu {width:100vw;
+		 min-height:10vh;
+		 display:none;
+		 background-color:black;}
+
+		 /*--------------------------second tile----------------------*/
+
+#tile1 {width:100%;
+		margin:auto;
+		text-align: center;}
+#iconLine {width:100%;}
+#iconLine>ul { width:80%;
+			   margin:auto;
+			   text-align:center; }
+#iconLine>ul>li {list-style: none;
+				 display:inline-block;}
+#iconLine>ul>li>img {width:27px;
+					height:27px;
+					margin:65px 0px 65px 0px;
+					padding:0px 11px 0px 11px;}
+
+#tile1>div	{
+			}
+
+
+#tile1>div>h3 {				font-family: 'proxima-nova', sans-serif;
+						  font-size:2.3vw;
+						  color:#99cc00;
+						  margin-bottom:15px;
+						}			
+
+#tile1>#text>p       {   font-family: 'Roboto', sans-serif;
+						 font-size: 14px;
+						 line-height: 192%;
+						 max-width:736px;
+						 margin:auto;
+						text-align: center;
+						font-weight:100;
+						}
+
+#tile1>#tile1Links       {  
+						}
+
+#tile1>#tile1Links>a       { margin:65px 10px 65px 10px;
+							color:white;
+							font-family: 'Roboto', sans-serif;
+							font-size:14px;
+							text-decoration: none;
+							padding:12px 50px 12px 50px;
+							background-color:#99cc00;
+							display:inline-block;
+						}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
