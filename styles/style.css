@@ -126,12 +126,8 @@ body {width:100vw;
 		#sponsor4>a>img {width:13.85vw;}
 		#sponsor5>a>img {width:4.99vw;}
 
-		#sponsors>ul>li>a {}
-
-		#sponsors>ul>li>a>img {}
 
 #jRight {width:24%;
-
 		box-sizing: border-box;
 		float:right;
 		text-align: center;}
@@ -370,7 +366,7 @@ body {width:100vw;
 
 /*------------------------------------@media tags--------------------------------*/
 /*///////////////////////////////////////////////////////////////////////////////*/
-/*--------------------till 1280 pixels--------------------*/
+/*--------------------under 1280 pixels--------------------*/
 
 @media only screen and (max-width: 1279px) {
 
@@ -410,7 +406,7 @@ body {width:100vw;
 
 	/*#sponsors>ul {margin-bottom:100px;}
 */
-	#sponsor1>a>img {width:10.88vw;}
+		#sponsor1>a>img {width:10.88vw;}
 		#sponsor2>a>img {width:13.69vw;}
 		#sponsor3>a>img {width:15.61vw;}
 		#sponsor4>a>img {width:26.8vw;}
@@ -421,19 +417,16 @@ body {width:100vw;
 				margin-bottom:25px;}
 
 	#mainTitle>div>#one {font-size:2.5vw;
-						/*position:absolute;*/
 						top:1vw;
 						left:10vw;
 						}
 
 	#mainTitle>div>#two {font-size:7.3vw;
-						/*position:absolute;*/
 						top:1vw;
 						left:5vw;
 						}
 
 	#mainTitle>div>#three {font-size:2.5vw;
-						/*position:absolute;*/
 						top:8.5vw;
 						left:10vw;
 						width:400px;}
@@ -449,7 +442,7 @@ body {width:100vw;
 
 	#iconLine {display:none;}
 
-	#tile1>div>h3 {	
+	#tile1>#text>h3 {	
 				margin-top:35px;
 				margin-bottom:25px;
 				font-size:30px;}
@@ -481,9 +474,124 @@ body {width:100vw;
 }
 
 
-/*--------------------till 639 pixels--------------------*/
+/*--------------------under 640 pixels--------------------*/
 
 @media only screen and (max-width: 639px) {
+
+
+	#jumbotron {background-image:url(../images/hrn_mobile_bg.jpg);
+				height:221vw;
+				min-height:80vw;}
+
+		#jLeft {width:47%;}
+		#jCent {float:none; margin:auto;width:100%;}
+		#jRight {width:47%;}
+
+		#jLeft>p {margin:95vw 0px 0px 0px;
+					font-size:3.75vw;
+					/*text-align:left;*/}
+
+		#jLeft>h4 {margin:0px 0px 0px 0px;
+					font-size:4.2vw;
+					font-weight:bolder;
+					/*text-align:left;*/}
+
+		#jRight>p {margin:95vw 0px 0px 0px;
+					font-size:3.75vw;
+					/*text-align:right;*/}
+
+		#jRight>h4 {margin:0px 0px 0px 0px;
+					font-size:4.2vw;
+					font-weight:bolder;
+					/*text-align:right;*/}
+
+		#jMid {width:100%;
+			   margin:auto;
+			   text-align:center;
+		  margin-top:125vw;}
+
+		 	#jMid>h3 {font-size:6.875vw;}
+
+		 	#jMid>a {display:block;
+		 			padding:11px 10px 11px 10px;
+		 			 width:200px;
+		 			 margin:auto;
+		 			 margin-top:30px;
+		 			 margin-bottom:30px;}
+
+		 	#jMid>a:last-of-type {
+		 			 padding:11px 8px 11px 8px;
+		 			 }
+		 	#jMid>a:first-of-type {
+		 			 padding:11px 8px 11px 8px;
+		 			 }
+
+		 	#mainTitle {width:50%;
+				margin-top:35vw;
+				margin-bottom:25px;}
+
+				#mainTitle>div>#one {font-size:4vw;
+						top:1vw;
+						left:8vw;
+						}
+				#mainTitle>div>#two {font-size:11.25vw;
+						top:1vw;
+						left:0vw;
+						}
+				#mainTitle>div>#three {font-size:4vw;
+						top:13vw;
+						left:8vw;
+						width:400px;}
+
+				#sponsor1>a>img {width:26.125vw;}
+				#sponsor2>a>img {width:32.85vw;}
+				#sponsor3>a>img {width:37.47vw;}
+				#sponsor4>a>img {width:34.225vw;}
+				#sponsor5>a>img {width:24.2vw;}
+
+		#tile1>#text>h3 {font-size:22px;
+						margin-top:30px;
+						margin-bottom:20px;}
+
+		#tile1>#text>p {max-width:90%;}
+
+		#tile1Links       { width:70%; margin:auto;}
+
+		#tile1Links>a       { margin:7px 10px 15px 10px;}
+
+		#tile1>#tile1Links>a {
+		 			padding:11px 5px 11px 5px;
+		 			 width:170px;
+		 			 display:block;
+		 			 margin:auto;
+		 			 }
+
+		 	#tile1>#tile1Links>a:last-of-type {
+		 			 padding:11px 7px 11px 7px;
+		 			 margin:30px auto 15px auto;
+		 					 			 }
+		 	#tile1>#tile1Links>a:first-of-type {
+		 			 padding:11px 8px 11px 8px;
+		 			 margin:15px auto 11px auto;
+		 			 }
+
+		 	#mobilesIn>a>img {top:50vw;
+						left:27vw;}
+
+		 	#mobilesIn>img {margin:30px 0px 30px 0px;
+					  width:32.5vw;
+					  height:45vw;
+					z-index: 0;}
+
+			#appDesc > h3 {font-size:22px;
+					margin:15px 0px 20px 0px;}
+
+			#appDesc>p       {max-width:90%;}
+
+			#col2>div>img {margin:20px 0px 35px 0px;
+			   width:89vw;}
+		 			 
+
 
     
 }
