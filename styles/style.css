@@ -26,13 +26,10 @@ body {width:100vw;
 			  overflow:visible;}
 
 #jLeft {width:24%;
-		/*min-height:670px;*/
 		/*border:1px solid red;*/
 		box-sizing: border-box;
 		float:left;
 		text-align: center;}
-
-/*#jLeft>div {text-align: center; margin:auto;}*/
 
 
 		#jLeft>p {color:white;
@@ -49,7 +46,6 @@ body {width:100vw;
 
 #jCent {width:52%;
 		margin:auto;
-		/*min-height:670px;*/
 		border:1px solid rgba(0,0,0,0);
 		box-sizing: border-box;
 		float:none;
@@ -113,8 +109,6 @@ body {width:100vw;
 		#sponsors>ul {width:100%;
 					  margin:auto;}
 
-		
-
 		#sponsors>ul>li {/*width:19.5%;*/
 						 display:inline-block;
 						 box-sizing: border-box;
@@ -122,8 +116,7 @@ body {width:100vw;
 						 list-style: none;
 						 box-sizing: border-box;}
 
-		#sponsors>ul>li:first-of-type {padding:0px 13px 0px 0px;
-									  }
+		#sponsors>ul>li:first-of-type {padding:0px 13px 0px 0px;  }
 
 		#sponsors>ul>li:last-of-type {padding:0px 0px 0px 13px;}
 
@@ -132,13 +125,10 @@ body {width:100vw;
 		#sponsor3>a>img {width:8.17vw;}
 		#sponsor4>a>img {width:13.85vw;}
 		#sponsor5>a>img {width:4.99vw;}
-		
-
 
 		#sponsors>ul>li>a {}
 
 		#sponsors>ul>li>a>img {}
-
 
 #jRight {width:24%;
 
@@ -171,9 +161,7 @@ body {width:100vw;
 		 z-index: 300;
 		 display:block;}
 
-#logo {
-	   float:left;
-	   }
+#logo {float:left;}
 
 #logo>img {margin: 19px 0px 0px 20px;}
 
@@ -192,8 +180,7 @@ body {width:100vw;
 				font-size:86%;
 				padding: 0px 8px 0px 8px; }
 
-#getTickets {float:right;
-			}
+#getTickets {float:right;}
 
 #getTickets>div {margin: 28px 52px 0px 0px;}
 
@@ -205,6 +192,7 @@ body {width:100vw;
 				font-size:86%;
 				text-decoration: none;}
 
+
 /*----------------------------------------- Mobile Menu -----------------------------------*/
 
 #mbMenu {width:100vw;
@@ -213,7 +201,6 @@ body {width:100vw;
 		 overflow:hidden;
 		 position:fixed;
 		 display: none;}
-
 
 		 #menuIconCont {width:100px;
 		 			 height:35px;
@@ -286,7 +273,7 @@ body {width:100vw;
 
 #tile1>#tile1Links       {  }
 
-#tile1>#tile1Links>a       { margin:40px 10px 20px 10px;
+#tile1>#tile1Links>a       { margin:60px 10px 60px 10px;
 							color:white;
 							font-family: 'Roboto', sans-serif;
 							font-size:14px;
@@ -350,7 +337,6 @@ body {width:100vw;
 						font-weight:100;}
 
 
-
 	#appLinks {width:100%;
 				margin:30px 0px 30px 0px;}
 
@@ -360,14 +346,14 @@ body {width:100vw;
 						height:40px;}
 
 
-
 #col2 {width:50%;
 	   float:right;
 		box-sizing: border-box;
 		margin:auto;
 		text-align:center;}
 
-	#col2>div>img {margin:120px 0px 35px 0px;}
+	#col2>div>img {margin:120px 0px 35px 0px;
+				   width:90%;}
 
 
 	#col2>a {				margin:0px 10px 65px 10px;
@@ -382,7 +368,6 @@ body {width:100vw;
 
 
 
-
 /*------------------------------------@media tags--------------------------------*/
 /*///////////////////////////////////////////////////////////////////////////////*/
 /*--------------------till 1280 pixels--------------------*/
@@ -392,10 +377,6 @@ body {width:100vw;
 	#dtMenu {display:none;}
 
 	#mbMenu {display:block;}
-
-	
-
-		
     
 }
 
@@ -408,7 +389,9 @@ body {width:100vw;
 	#jRight {width:30%;}
 
 	#jumbotron {background-image:url(../images/hrn_tablet_bg.jpg);
-				height:77vw;}
+				height:80vw;
+				min-height:80vw;}
+
 	#jLeft>p {margin:12vw 0px 0px 24px;
 					font-size:1.5vw;}
 
@@ -422,7 +405,6 @@ body {width:100vw;
 	#jRight>h4 {margin:0px 0px 0px 24px;
 					font-size:2vw;
 					font-weight:bolder;}
-
 
 	#sponsors>ul>li {padding:13px 25px 13px 25px;}
 
@@ -461,31 +443,25 @@ body {width:100vw;
 
 	#jMid>h3 {font-size:4.3vw; /*width:600px;*/
 			  margin:auto;
-				text-align:center;
-				}
+				text-align:center;}
 
 	#jMid>a {margin:10px 10px 35px 10px;}
 
 	#iconLine {display:none;}
+
 	#tile1>div>h3 {	
 				margin-top:35px;
 				margin-bottom:25px;
 				font-size:30px;}
 
-	#tile1>#text>p       {max-width:95%;
-						 }
+	#tile1>#text>p       {max-width:95%;}
 
+	#col1 {width:100%;}
 
-	#col1 {width:100%;
-		}
-
-		#col2 {width:100%;
-		}
-
+		#col2 {width:100%;}
 
 	#mobilesIn>a>img {top:23vw;
-					left:27vw;
-						}
+					left:27vw;}
 
 	#appDesc > h3 {font-size:30px;
 					margin:5px 0px 20px 0px;}
@@ -496,14 +472,13 @@ body {width:100vw;
 		   text-align: center;}
 
 	#col2>div>img {margin:20px 0px 35px 0px;
-			   width:46vw;
-			   }
+			   width:46vw;}
 
-	#col2>a {				margin:0px 10px 30px 10px;
-							}	
+	#col2>a {margin:0px 10px 30px 10px;}	
+
+	#tile1>#tile1Links>a       { margin:30px 10px 20px 10px;}
     
 }
-
 
 
 /*--------------------till 639 pixels--------------------*/
