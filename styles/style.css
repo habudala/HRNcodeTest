@@ -1,37 +1,38 @@
-/* -----css pre-set ----------*/
+/* -------------------------------------CSS pre-set ---------------------------------------*/
+/*/////////////////////////////////////////////////////////////////////////////////////////*/
 * {margin:0px 0px 0px 0px;
    padding: 0px 0px 0px 0px;}
 
 
-/* -----style at 1280 pixels ----------*/
+/* ----------------------------Style at 1280 pixels ------------------------------------*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
 body {width:100vw;
 	  box-sizing: border-box;}
 
 #mainWrapper {width:100vw;
-			  box-sizing: border-box;
-			   }
+			  box-sizing: border-box;}
 
 #header {	width:100%;
 			box-sizing: border-box;}
 
 #jumbotron {  width:100%;
 			  min-height:670px;
-			  height:50vw;
-			  /*margin:20px 0px 0px 0px;*/
+			  height:45vw;
 	  		  box-sizing: border-box;
 			  background-image:url(../images/hrn_desktop_bg.jpg);
 			  background-repeat:no-repeat;
 			  background-position: center top;
 			  background-size: cover;
-			  /*position: relative;*/
-			  }
+			  overflow:visible;}
 
-#jLeft {width:25%;
-		min-height:670px;
+#jLeft {width:24%;
+		/*min-height:670px;*/
 		/*border:1px solid red;*/
 		box-sizing: border-box;
 		float:left;
-		text-align: center}
+		text-align: center;}
+
+/*#jLeft>div {text-align: center; margin:auto;}*/
 
 
 		#jLeft>p {color:white;
@@ -39,107 +40,118 @@ body {width:100vw;
 					font-weight: normal;
 					font-size:1.25vw;
 					font-family: 'museo-sans',sans-serif;}
+
 		#jLeft>h4 {color:white;
-					margin:0px 0px 0px 24px;
+					margin:0px 0px 0px 0px;
 					font-family: 'museo-sans',sans-serif;
 					font-size:1.75vw;
 					font-weight:900;}
 
-#jCent {width:50%;
-		min-height:670px;
-		/*border:1px solid blue;*/
+#jCent {width:52%;
+		margin:auto;
+		/*min-height:670px;*/
+		border:1px solid rgba(0,0,0,0);
 		box-sizing: border-box;
-		float:left;
+		float:none;
 		text-align: center}
-
 
 		#mainTitle {margin:auto;
 				margin-top:180px;
 				text-align: left;
 				width:50%;}
-		#mainTitle>h3 {font-family: "Playfair Display",serif;
+
+		#mainTitle>div {font-family: "Playfair Display",serif;
 				   color:white;
 				   font-weight: normal;
-				   position:relative;
-				   }
-		#mainTitle>h3>#one{font-size:2.1vw;
+				   position:relative;}
+
+		#mainTitle>div>#one{font-size:2.1vw;
 						position:absolute;
 						top:1vw;
 						left:5vw;}
 
-		#mainTitle>h3>#two {font-size:5.9375vw;
+		#mainTitle>div>#two {font-size:5.9375vw;
 						position:absolute;
 						top:1vw;
-						left:1vw;
-						
-						}
-		#mainTitle>h3>#three {font-size:2.1vw;
+						left:1vw;}
+
+		#mainTitle>div>#three {font-size:2.1vw;
 						position:absolute;
 						top:7.5vw;
-						left:5vw;
-						
-						}
+						left:5vw;}
 
 		#jMid {margin:auto;
 			   margin-top:460px;
-				}
+				width:100%;}
 
-				#jMid>h3 {font-family: 'proxima-nova', sans-serif;
-						  font-size:2.4vw;
-						  color:white;
-						  margin-bottom:11px;}
+					#jMid>h3 {font-family: 'proxima-nova', sans-serif;
+							  font-size:32px;
+							  color:white;
+							  margin-bottom:11px;}
 
+				   #jMid>a {
+				   	margin:0px 10px 40px 10px;
+					color:white;
+					font-family: 'Roboto', sans-serif;
+					font-size:14px;
+					text-decoration: none;
+								padding:11px 54px 11px 54px;
+								background-color:#99cc00;
+								display:inline-block;}
 
-			   #jMid>a {
-			   	margin:0px 10px 25px 10px;
-				color:white;
-				font-family: 'Roboto', sans-serif;
-				font-size:14px;
-				text-decoration: none;
-							padding:12px 50px 12px 50px;
-							background-color:#99cc00;
-							display:inline-block;}
-
-				#jMid>a:first-of-type {
-			   	padding:12px 35px 12px 35px;
-			   color:#99cc00;
-				background-color:white;}
+					#jMid>a:first-of-type {
+				   	padding:11px 39px 11px 39px;
+				   color:#99cc00;
+					background-color:white;}
 
 		#sponsors { display:inline-block;
 					width:100%;
 					box-sizing: border-box;
 					margin:auto;
 					text-align: center; }
-		#sponsors>ul {}
-		#sponsors>ul>li {width:19.5%;
+
+		#sponsors>ul {width:100%;
+					  margin:auto;}
+
+		
+
+		#sponsors>ul>li {/*width:19.5%;*/
 						 display:inline-block;
 						 box-sizing: border-box;
-						 padding:0px 0px 0px 0px;
-						 /*margin:35px 3px 0px 3px;*/
+						 padding:0px 13px 0px 13px;
 						 list-style: none;
-						 
 						 box-sizing: border-box;}
+
+		#sponsors>ul>li:first-of-type {padding:0px 13px 0px 0px;
+									  }
+
+		#sponsors>ul>li:last-of-type {padding:0px 0px 0px 13px;}
+
+		#sponsor1>a>img {width:5.49vw;}
+		#sponsor2>a>img {width:7.18vw;}
+		#sponsor3>a>img {width:8.17vw;}
+		#sponsor4>a>img {width:13.85vw;}
+		#sponsor5>a>img {width:4.99vw;}
+		
+
 
 		#sponsors>ul>li>a {}
 
-		#sponsors>ul>li>a>img {width:80%;}
+		#sponsors>ul>li>a>img {}
 
 
+#jRight {width:24%;
 
-
-#jRight {width:25%;
-		min-height:670px;
-		/*border:1px solid yellow;*/
 		box-sizing: border-box;
 		float:right;
-		text-align: center}
-
+		text-align: center;}
 
 		#jRight>p {color:white;
 					margin:575px 0px 0px 24px;
 					font-weight: normal;
 					font-size:1.25vw;
 					font-family: 'museo-sans',sans-serif;}
+
 		#jRight>h4 {color:white;
 					margin:0px 0px 0px 24px;
 					font-family: 'museo-sans',sans-serif;
@@ -148,17 +160,21 @@ body {width:100vw;
 
 	
 
-/* -----menus ----------*/
+/* ------------------------------------------ Menus --------------------------------------------*/
+/*/////////////////////////////////////////////////////////////////////////////////////////////*/
+
 #dtMenu {width:100vw;
 		 min-height:10vh;
 		 background-color:rgba(0,0,0,0.7);
 		 overflow:hidden;
 		 position:fixed;
-		 z-index: 3000;}
+		 z-index: 300;
+		 display:block;}
 
-#logo {/*width:17.5%;*/
+#logo {
 	   float:left;
 	   }
+
 #logo>img {margin: 19px 0px 0px 20px;}
 
 #dtNav { width:60%;
@@ -177,7 +193,6 @@ body {width:100vw;
 				padding: 0px 8px 0px 8px; }
 
 #getTickets {float:right;
-			 /*width:17.5%;*/
 			}
 
 #getTickets>div {margin: 28px 52px 0px 0px;}
@@ -188,39 +203,78 @@ body {width:100vw;
 				background-color:#99cc00;
 				font-family: 'Roboto', sans-serif;
 				font-size:86%;
-				text-decoration: none;
-			   }
+				text-decoration: none;}
+
+/*----------------------------------------- Mobile Menu -----------------------------------*/
 
 #mbMenu {width:100vw;
 		 min-height:10vh;
-		 display:none;
-		 background-color:black;}
+		 background-color:rgba(0,0,0,0.7);
+		 overflow:hidden;
+		 position:fixed;
+		 display: none;}
 
-		 /*--------------------------tile1----------------------*/
+
+		 #menuIconCont {width:100px;
+		 			 height:35px;
+		 			 margin:22px 0px 16px 0px;
+		 			 box-sizing:border-box;
+		 			 /*border:1px solid white;*/
+		 			 float:right;
+		 			 }
+
+		 	#menuIcon {width:30px;
+		 			   height:30px;
+		 			   position:relative;
+		 			   box-sizing: border-box;
+		 				/*border:1px solid yellow;*/
+		 				text-align:center;
+		 				margin:auto;}
+
+		 		.line {
+		 			   width:100%;
+		 			   border:2px solid white;
+		 			   position:absolute;}
+
+		 	#line1 { top:2px;
+		 		     left:0px;	}
+
+		 	#line2 {top:12px;
+		 		     left:0px;}
+
+		 	#line3 {top:22px;
+		 		     left:0px;}
+
+
+
+/*---------------------------------------- tile1 -----------------------------------------*/
+/*//////////////////////////////////////////////////////////////////////////////////////*/
 
 #tile1 {width:100%;
 		margin:auto;
 		text-align: center;}
-#iconLine {width:100%;}
+
+#iconLine {width:100%; display:block;}
+
 #iconLine>ul { width:80%;
 			   margin:auto;
 			   text-align:center; }
+
 #iconLine>ul>li {list-style: none;
 				 display:inline-block;}
+
 #iconLine>ul>li>img {width:27px;
 					height:27px;
 					margin:65px 0px 65px 0px;
 					padding:0px 11px 0px 11px;}
 
-#tile1>div	{
-			}
+#tile1>div	{	}
 
 
-#tile1>div>h3 {				font-family: 'proxima-nova', sans-serif;
-						  font-size:2.3vw;
-						  color:#99cc00;
-						  margin-bottom:15px;
-						}			
+#tile1>div>h3 {	font-family: 'proxima-nova', sans-serif;
+				font-size:2.3vw;
+				color:#99cc00;
+				margin-bottom:15px;}			
 
 #tile1>#text>p       {   font-family: 'Roboto', sans-serif;
 						 font-size: 14px;
@@ -228,27 +282,24 @@ body {width:100vw;
 						 max-width:736px;
 						 margin:auto;
 						text-align: center;
-						font-weight:100;
-						}
+						font-weight:100;}
 
-#tile1>#tile1Links       {  
-						}
+#tile1>#tile1Links       {  }
 
-#tile1>#tile1Links>a       { margin:65px 10px 65px 10px;
+#tile1>#tile1Links>a       { margin:40px 10px 20px 10px;
 							color:white;
 							font-family: 'Roboto', sans-serif;
 							font-size:14px;
 							text-decoration: none;
 							padding:12px 50px 12px 50px;
 							background-color:#99cc00;
-							display:inline-block;
-						}
+							display:inline-block;}
 
 
 
 
- /*-------------------------- tile2----------------------*/
-
+ /*------------------------------------- tile2-------------------------------------------*/
+ /*//////////////////////////////////////////////////////////////////////////////////////*/
 
 
 #tile2 {background: linear-gradient(to top right, #53abb7, #6cc46e);
@@ -263,33 +314,33 @@ body {width:100vw;
 		box-sizing: border-box;
 		/*border: 1px solid red;*/}
 
-
-	#mobiles {width:100%;
-			  }
+	#mobiles {width:100%;}
 
 	#mobilesIn {position:relative;
 				width:50%;
 				margin:auto;
-			 text-align: center;}
+			 text-align: center; }
+
 		#mobilesIn>img {margin:30px 0px 30px 0px;
 					  width:15.5vw;
 					  height:22vw;
-					  }
+					z-index: 0;}
 
-		#mobilesIn>a {
-					}
+		#mobilesIn>a {}
+
 		#mobilesIn>a>img {width:104px;
 						height:42px;
-						top:275px;
-						left:175px;
-						position:absolute;
-						}
+						top:22vw;
+						left:14vw;
+						position:absolute;}
 
 	#appDesc {}
+
 		#appDesc > h3 {font-family: 'proxima-nova', sans-serif;
 						  font-size:2.3vw;
 						  color:black;
 						  margin-bottom:15px;}
+
 		#appDesc >p {font-family: 'Roboto', sans-serif;
 						 font-size: 14px;
 						 line-height: 192%;
@@ -302,7 +353,9 @@ body {width:100vw;
 
 	#appLinks {width:100%;
 				margin:30px 0px 30px 0px;}
+
 		#appLinks>a {margin:0px 13px 0px 13px;}
+
 		#appLinks>a>img{width:135px;
 						height:40px;}
 
@@ -311,11 +364,10 @@ body {width:100vw;
 #col2 {width:50%;
 	   float:right;
 		box-sizing: border-box;
-		/*border: 1px solid blue;*/}
+		margin:auto;
+		text-align:center;}
 
-	#col2>img {margin:120px 0px 35px 0px;}
-
-
+	#col2>div>img {margin:120px 0px 35px 0px;}
 
 
 	#col2>a {				margin:0px 10px 65px 10px;
@@ -326,7 +378,143 @@ body {width:100vw;
 							text-decoration: none;
 							padding:12px 50px 12px 50px;
 							background-color:white;
-							display:inline-block;}							
+							display:inline-block;}	
+
+
+
+
+/*------------------------------------@media tags--------------------------------*/
+/*///////////////////////////////////////////////////////////////////////////////*/
+/*--------------------till 1280 pixels--------------------*/
+
+@media only screen and (max-width: 1279px) {
+
+	#dtMenu {display:none;}
+
+	#mbMenu {display:block;}
+
+	
+
+		
+    
+}
+
+/*--------------------under 1000 pixels--------------------*/
+
+@media only screen and (max-width: 999px) {
+
+	#jLeft {width:30%;}
+	#jCent {float:none; margin:auto;width:75%;}
+	#jRight {width:30%;}
+
+	#jumbotron {background-image:url(../images/hrn_tablet_bg.jpg);
+				height:77vw;}
+	#jLeft>p {margin:12vw 0px 0px 24px;
+					font-size:1.5vw;}
+
+	#jLeft>h4 {margin:0px 0px 0px 24px;
+					font-size:2vw;
+					font-weight:bolder;}
+
+	#jRight>p {margin:12vw 0px 0px 24px;
+					font-size:1.5vw;}
+
+	#jRight>h4 {margin:0px 0px 0px 24px;
+					font-size:2vw;
+					font-weight:bolder;}
+
+
+	#sponsors>ul>li {padding:13px 25px 13px 25px;}
+
+	/*#sponsors>ul {margin-bottom:100px;}
+*/
+	#sponsor1>a>img {width:10.88vw;}
+		#sponsor2>a>img {width:13.69vw;}
+		#sponsor3>a>img {width:15.61vw;}
+		#sponsor4>a>img {width:26.8vw;}
+		#sponsor5>a>img {width:9.5vw;}
+
+	#mainTitle {width:50%;
+				margin-top:18vw;
+				margin-bottom:25px;}
+
+	#mainTitle>div>#one {font-size:2.5vw;
+						/*position:absolute;*/
+						top:1vw;
+						left:10vw;
+						}
+
+	#mainTitle>div>#two {font-size:7.3vw;
+						/*position:absolute;*/
+						top:1vw;
+						left:5vw;
+						}
+
+	#mainTitle>div>#three {font-size:2.5vw;
+						/*position:absolute;*/
+						top:8.5vw;
+						left:10vw;
+						width:400px;}
+
+	#jMid {width:100%;
+		  margin-top:45vw;}	
+
+	#jMid>h3 {font-size:4.3vw; /*width:600px;*/
+			  margin:auto;
+				text-align:center;
+				}
+
+	#jMid>a {margin:10px 10px 35px 10px;}
+
+	#iconLine {display:none;}
+	#tile1>div>h3 {	
+				margin-top:35px;
+				margin-bottom:25px;
+				font-size:30px;}
+
+	#tile1>#text>p       {max-width:95%;
+						 }
+
+
+	#col1 {width:100%;
+		}
+
+		#col2 {width:100%;
+		}
+
+
+	#mobilesIn>a>img {top:23vw;
+					left:27vw;
+						}
+
+	#appDesc > h3 {font-size:30px;
+					margin:5px 0px 20px 0px;}
+
+	#appLinks {margin:30px 0px 0px 0px;}
+
+	#col2 {margin:auto;
+		   text-align: center;}
+
+	#col2>div>img {margin:20px 0px 35px 0px;
+			   width:46vw;
+			   }
+
+	#col2>a {				margin:0px 10px 30px 10px;
+							}	
+    
+}
+
+
+
+/*--------------------till 639 pixels--------------------*/
+
+@media only screen and (max-width: 639px) {
+
+    
+}
+
+
+
 
 
 
