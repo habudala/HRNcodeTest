@@ -1,10 +1,5 @@
-/* -------------------------------------CSS pre-set ---------------------------------------*/
-/*/////////////////////////////////////////////////////////////////////////////////////////*/
-* {margin:0px 0px 0px 0px;
-   padding: 0px 0px 0px 0px;}
 
-
-/* ----------------------------Style and below 1280 pixels ------------------------------------*/
+/* ----------------------------Style at 1280 pixels ------------------------------------*/
 /*//////////////////////////////////////////////////////////////////////////////////////*/
 body {width:100vw;
 	  box-sizing: border-box;}
@@ -24,6 +19,7 @@ body {width:100vw;
 			  background-size: cover;
 			  overflow:visible;}
 
+/*--------------------------left side of homepage------------------------*/
 #jLeft {width:24%;
 		/*border:1px solid red;*/
 		box-sizing: border-box;
@@ -42,6 +38,8 @@ body {width:100vw;
 					font-family: 'museo-sans',sans-serif;
 					font-size:1.75vw;
 					font-weight:900;}
+
+/*--------------------------middle of homepage------------------------*/
 
 #jCent {width:52%;
 		margin:auto;
@@ -74,7 +72,7 @@ body {width:100vw;
 						position:absolute;
 						top:7.5vw;
 						left:5vw;}
-
+/*----------------subtitle, links and sponsors----------*/
 		#jMid {margin:auto;
 			   margin-top:37vw;
 				width:100%;}
@@ -125,7 +123,7 @@ body {width:100vw;
 							#sponsor4>a>img {width:13.85vw;}
 							#sponsor5>a>img {width:4.99vw;}
 
-
+/*----------------------------right side of home page------------------------*/
 #jRight {width:24%;
 		box-sizing: border-box;
 		float:right;
@@ -188,6 +186,31 @@ body {width:100vw;
 							text-decoration: none;
 							margin-left:1.25vw;}
 
+			#dtNav>ul>li:nth-child(9){
+				position:relative;
+			}
+
+	#drDown {
+		     z-index:3000;
+		     top:6.2vw;
+		     left:75vw;
+		     display:none;
+			 position:fixed;}
+
+	#myId{ 
+		    opacity:0;
+			left:100vw;
+			transition: opacity 2s, left 2s, linear;
+			background-color:rgba(255,255,255,0.5); 
+			z-index:3000;}
+
+	#drDown>ul>li {list-style: none;
+					font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color:white;
+				font-size:1.1vw;
+				padding: 0.75vw 1vw 0.75vw 1vw;}
+
 
 /*----------------------------------------- Mobile Menu -----------------------------------*/
 
@@ -202,7 +225,6 @@ body {width:100vw;
 		 			 height:35px;
 		 			 margin:22px 0px 16px 0px;
 		 			 box-sizing:border-box;
-		 			 /*border:1px solid white;*/
 		 			 float:right;
 		 			 }
 
@@ -210,44 +232,38 @@ body {width:100vw;
 		 			   height:30px;
 		 			   position:relative;
 		 			   box-sizing: border-box;
-		 				/*border:1px solid yellow;*/
 		 				text-align:center;
 		 				margin:auto;}
 
 		 		.line {
 		 			   width:100%;
 		 			   border:2px solid white;
-		 			   position:absolute;
-		 				}
+		 			   position:absolute;}
 
 			 	#line1 { top:2px;
 			 		     left:0px;
 			 		     transition:opacity 2s ease-in-out;	}
 
 			 	#line2 {top:12px;
-			 		     left:0px;
-			 		 }
+			 		     left:0px;}
 
-			 	#line2:hover {border:2px solid #99cc00;
-			 		 }
+			 	#line2:hover {border:2px solid #99cc00; }
 
 
 			 	#line3 {top:22px;
 			 		     left:0px;}
 
-		/*--------- modal------- */
 		#myModal {
-		    display: none; /* Hidden by default */
-		    position: fixed; /* Stay in place */
-		    z-index: 1; /* Sit on top */
-		    /*margin-top: 6.75vw;*/ /* Location of the box */
+		    display: none; 
+		    position: fixed; 
+		    z-index: 1; 
 		    left: 0;
 		    top: 6.7vw;
-		    width: 100%; /* Full width */
-		    height: 100%; /* Full height */
-		    overflow: auto; /* Enable scroll if needed */
-		    background-color: rgb(0,0,0); /* Fallback color */
-		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		    width: 100%; 
+		    height: 100%; 
+		    overflow: auto; 
+		    background-color: rgb(0,0,0); 
+		    background-color: rgba(0,0,0,0.4); 
 		}
 
 		#mdCont {
@@ -260,8 +276,7 @@ body {width:100vw;
 		    width: 100%;
 		    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 		    animation-name: animate;
-		    animation-duration: 0.4s;
-		}
+		    animation-duration: 0.4s;}
 
 		#mbNav {text-align: center; margin:auto;}
 
@@ -269,17 +284,13 @@ body {width:100vw;
 
 		#mbNav>ul>li {list-style: none;
 					 padding:1vw 1vw 1vw 1vw;
-					 margin-left:100vw;
+					 margin-left:100vw;}
 
-			}
+		#mbNav>ul>li>a {color:white;
+			text-decoration: none;
+			font-family: 'Roboto', sans-serif;}
 
-		#mbNav>ul>li>a {color:white;text-decoration: none;font-family: 'Roboto', sans-serif;
-			}
-
-			#mbNav>ul>li>a:hover {color:#99cc00;
-								  
-								  
-			}
+			#mbNav>ul>li>a:hover {color:#99cc00;}
 
 
 		/* Add Animation */
@@ -303,7 +314,6 @@ body {width:100vw;
 	#rails {width:100%;
 		    height:10px;
 		    margin:1vw auto 1.25vw auto;
-			/*border:1px solid grey;*/
 			position:relative;}
 
 		#statDesc { width:19vw;
@@ -334,16 +344,12 @@ body {width:100vw;
 						   text-align:center; }
 
 				#iconLine>ul>li {list-style: none;
-								 display:inline-block;}
-
-						
+								 display:inline-block;}	
 
 						#iconLine>ul>li>img {width:2.3vw;
 											height:2.3vw;
 											margin:4vw 0px 4vw 0px;
 											padding:0px 11px 0px 11px;}
-
-#tile1>div	{	}
 
 
 		#tile1>div>h3 {	font-family: 'proxima-nova', sans-serif;
@@ -359,8 +365,6 @@ body {width:100vw;
 								text-align: center;
 								font-weight:100;}
 
-#tile1>#tile1Links       {  }
-
 		#tile1>#tile1Links>a       { margin:60px 10px 60px 10px;
 									color:white;
 									font-family: 'Roboto', sans-serif;
@@ -370,7 +374,6 @@ body {width:100vw;
 									background-color:#99cc00;
 									display:inline-block;
 									width:150px;}
-
 
 
 
@@ -387,8 +390,7 @@ body {width:100vw;
 
 		#col1 {width:50%;
 			   float:left;
-				box-sizing: border-box;
-				/*border: 1px solid red;*/}
+				box-sizing: border-box;}
 
 			#mobiles {width:100%;}
 
@@ -401,8 +403,6 @@ body {width:100vw;
 								  width:15.5vw;
 								  height:22vw;
 								z-index: 0;}
-
-					#mobilesIn>a {}
 
 					#mobilesIn>a>img {width:104px;
 									height:42px;
@@ -464,9 +464,6 @@ body {width:100vw;
 
 @media only screen and (min-width: 1960px) {
 
-	/*#jMid {margin:auto;
-			   margin-top:37vw;
-				width:100%;}*/
 
 					#jMid>h3 {font-family: 'proxima-nova', sans-serif;
 							  font-size:1.7vw;
@@ -489,8 +486,7 @@ body {width:100vw;
 								 line-height: 192%;
 								 max-width:60vw;
 								 margin:auto;
-								text-align: center;
-								}
+								text-align: center;}
 
 		#tile1>#tile1Links>a       { margin:4vw 0.75vw 4vw 0.75vw;		
 									font-size:0.72vw;		
@@ -517,12 +513,10 @@ body {width:100vw;
 								height:2vw}
 
 
-		#col2>a {				margin:0px 0.75vw 5vw 0.75vw;
-							
-							padding:0.8vw 4vw 0.8vw 4vw;
-							font-size:0.72vw;
+		#col2>a {margin:0px 0.75vw 5vw 0.75vw;
+				padding:0.8vw 4vw 0.8vw 4vw;
+				font-size:0.72vw;
 							}	
-
 
 }
 
@@ -772,13 +766,7 @@ body {width:100vw;
 			#col2>div>img {margin:20px 0px 35px 0px;
 			   width:89vw;}
 		 			 
-
-
-    
 }
 
-
-
-/*--------------------experimental ------------------------*/
 
 
