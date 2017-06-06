@@ -531,8 +531,7 @@ body {width:100vw;
 
 @media only screen and (max-width: 1279px) {
 
-	#logo>img {margin: 1.75vw 0px 0px 1.5vw;
-				   }
+	#logo>img {margin: 1.75vw 0px 0px 1.5vw;  }
 
 	#dtMenu {display:none;}
 
@@ -657,6 +656,8 @@ body {width:100vw;
 /*--------------------under 640 pixels--------------------*/
 
 @media only screen and (max-width: 639px) {
+
+	#logo>img {margin: 3.5vw 0px 0px 1.5vw; }
 
 
 	#jumbotron {background-image:url(../images/hrn_mobile_bg.jpg);
