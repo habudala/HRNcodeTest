@@ -158,34 +158,35 @@ body {width:100vw;
 
 		#logo {float:left;}
 
-		#logo>img {margin: 19px 0px 0px 20px;}
+		#logo>img {margin: 1.5vw 0px 0px 1.5vw;
+				   width:19.5vw;}
 
-	#dtNav { width:60%;
+	#dtNav { 
 		  float:left;
-		 text-align:center;}
+		 text-align:center;
+		 width:77vw;
+		 margin:auto;}
 
 		#dtNav>ul {list-style: none;
-		   margin:29px 25px 29px 25px;}
+		   margin:1.5vw auto 1.4vw auto;
+		   text-align:center;}
 
 			#dtNav>ul>li { display:inline-block;}
 
 				#dtNav>ul>li>a {font-family: 'Roboto', sans-serif;
 				text-decoration: none;
 				color:white;
-				font-size:86%;
-				padding: 0px 8px 0px 8px; }
+				font-size:1.1vw;
+				padding: 0px 0.875vw 0px 0.875vw; }
 
-#getTickets {float:right;}
-
-		#getTickets>div {margin: 28px 52px 0px 0px;}
-
-			#getTickets>div>a {	text-align:left;
+			#dtNav>ul>li:last-child{text-align:left;
 							color:white;
-							padding:13px 52px 13px 52px;
+							padding:1vw 3.7vw 1vw 3.7vw;
 							background-color:#99cc00;
 							font-family: 'Roboto', sans-serif;
-							font-size:86%;
-							text-decoration: none;}
+							font-size:1.1vw;
+							text-decoration: none;
+							margin-left:1.25vw;}
 
 
 /*----------------------------------------- Mobile Menu -----------------------------------*/
@@ -193,7 +194,7 @@ body {width:100vw;
 #mbMenu {width:100vw;
 		 min-height:10vh;
 		 background-color:rgba(0,0,0,0.7);
-		 overflow:hidden;
+		 overflow:visible;
 		 position:fixed;
 		 display: none;}
 
@@ -216,17 +217,80 @@ body {width:100vw;
 		 		.line {
 		 			   width:100%;
 		 			   border:2px solid white;
-		 			   position:absolute;}
+		 			   position:absolute;
+		 				}
 
 			 	#line1 { top:2px;
-			 		     left:0px;	}
+			 		     left:0px;
+			 		     transition:opacity 2s ease-in-out;	}
 
 			 	#line2 {top:12px;
-			 		     left:0px;}
+			 		     left:0px;
+			 		 }
+
+			 	#line2:hover {border:2px solid #99cc00;
+			 		 }
+
 
 			 	#line3 {top:22px;
 			 		     left:0px;}
 
+		/*--------- modal------- */
+		#myModal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    /*margin-top: 6.75vw;*/ /* Location of the box */
+		    left: 0;
+		    top: 6.7vw;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		#mdCont {
+		    position: relative;
+		    background-color: rgba(0,0,0,0.8);
+		    margin: auto;
+		    padding: 0;
+		    width: 100%; /* Full width */
+		    height: 100%;
+		    width: 100%;
+		    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		    animation-name: animate;
+		    animation-duration: 0.4s;
+		}
+
+		#mbNav {text-align: center; margin:auto;}
+
+		#mbNav>ul> {margin:auto; text-align:center;}
+
+		#mbNav>ul>li {list-style: none;
+					 padding:1vw 1vw 1vw 1vw;
+					 margin-left:100vw;
+
+			}
+
+		#mbNav>ul>li>a {color:white;text-decoration: none;font-family: 'Roboto', sans-serif;
+			}
+
+			#mbNav>ul>li>a:hover {color:#99cc00;
+								  
+								  
+			}
+
+
+		/* Add Animation */
+		@keyframes animate {
+		    from {left:100vw; opacity:0}
+		    to {left:0; opacity:1}
+		}
+		@keyframes animateBack {
+		    from {left:0px; opacity:1;}
+		    to {left:100vw; opacity:0;}
+		}
 
 
 /*---------------------------------------- tile1 -----------------------------------------*/
@@ -238,27 +302,29 @@ body {width:100vw;
 
 	#rails {width:100%;
 		    height:10px;
-		    margin:1vw auto 1vw auto;
+		    margin:1vw auto 1.25vw auto;
 			/*border:1px solid grey;*/
 			position:relative;}
 
-		#statDesc { width:176px;
-					height:40px;
+		#statDesc { width:19vw;
+					height:3.5vw;
 					background-color:#f2f2f2;
 					position:absolute;
+					display:block;
 					transform:rotateY(90deg);
 					text-align:center;
 					font-size:1.1vw;
+					font-family: 'Roboto', sans-serif;
 					transition:transform .2s linear;}
 
 				.triangle {   width: 0; 
 							  height: 0; 
-							border-left: 20px solid transparent;
-							border-right: 20px solid transparent;
-							border-top: 20px solid #f2f2f2;
+							border-left: 2vw solid transparent;
+							border-right: 2vw solid transparent;
+							border-top:1.5vw solid #f2f2f2;
 							position:absolute;
-							top:40px;
-							left:67px;}
+							top:3.5vw;
+							left:7.5vw;}
 
 
 	#iconLine {width:100%; display:block;}
@@ -393,9 +459,80 @@ body {width:100vw;
 
 /*------------------------------------@media tags--------------------------------*/
 /*///////////////////////////////////////////////////////////////////////////////*/
+
+/*--------------------over 1960 pixels--------------------*/
+
+@media only screen and (min-width: 1960px) {
+
+	/*#jMid {margin:auto;
+			   margin-top:37vw;
+				width:100%;}*/
+
+					#jMid>h3 {font-family: 'proxima-nova', sans-serif;
+							  font-size:1.7vw;
+							  color:white;
+							  margin-bottom:11px;}
+
+				   #jMid>a {
+				   	margin:0px 1vw 2vw 1vw;
+					font-size:0.72vw;
+					padding:0.75vw 5vw 0.75vw 5vw;}
+
+					#jMid>a:first-of-type {
+				   	padding:0.75vw 3.9vw 0.75vw 3.9vw;}
+
+		#tile1>div>h3 {font-size:1.7vw;
+						margin-bottom:1.5vw;}			
+
+		#tile1>#text>p       { 
+								 font-size: 0.72vw;
+								 line-height: 192%;
+								 max-width:60vw;
+								 margin:auto;
+								text-align: center;
+								}
+
+		#tile1>#tile1Links>a       { margin:4vw 0.75vw 4vw 0.75vw;		
+									font-size:0.72vw;		
+									padding:0.75vw 3.9vw 0.75vw 3.9vw;		
+									width:10vw;}
+
+
+		#mobilesIn>img {margin:3vw 0px 3vw 0px;}
+
+
+		#mobilesIn>a>img {width:5.4vw;
+						height:2.18vw;}
+
+		#appDesc >p {font-family: 'Roboto', sans-serif;
+						 font-size: 0.72vw;
+						 line-height: 192%;
+						 max-width:60%;}
+		#appLinks {width:100%;
+				margin:3vw 0px 3vw 0px;}
+
+			#appLinks>a {margin:0px 0.8vw 0px 0.8vw;}
+
+				#appLinks>a>img{width:7vw;
+								height:2vw}
+
+
+		#col2>a {				margin:0px 0.75vw 5vw 0.75vw;
+							
+							padding:0.8vw 4vw 0.8vw 4vw;
+							font-size:0.72vw;
+							}	
+
+
+}
+
+
 /*--------------------under 1280 pixels--------------------*/
 
 @media only screen and (max-width: 1279px) {
+
+	#logo>img {margin: 1.75vw 0px 0px 1.5vw;
+				   }
 
 	#dtMenu {display:none;}
 
@@ -410,6 +547,9 @@ body {width:100vw;
 /*--------------------under 1000 pixels--------------------*/
 
 @media only screen and (max-width: 999px) {
+
+	#logo>img {margin: 2vw 0px 0px 1.5vw;
+				   width:240px;}
 	
 
 	#jumbotron {background-image:url(../images/hrn_tablet_bg.jpg);
@@ -476,6 +616,8 @@ body {width:100vw;
 
 	#iconLine {display:none;}
 
+	#statDesc { display:none;}
+
 	#tile1>#text>h3 {	
 				margin-top:35px;
 				margin-bottom:25px;
@@ -504,6 +646,10 @@ body {width:100vw;
 		#col2>a {margin:0px 10px 30px 10px;}	
 
 		#tile1>#tile1Links>a       { margin:30px 10px 20px 10px;}
+
+#myModal {top: 8vw;
+	
+		}
     
 }
 
@@ -632,15 +778,6 @@ body {width:100vw;
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*--------------------experimental ------------------------*/
 
 
